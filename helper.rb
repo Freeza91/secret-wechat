@@ -10,8 +10,8 @@ helpers do
 
   def secret(user_id, my_id, user_content)
     encode_content = Base64.encode64(user_content)
-    code = Digest::SHA2.hexdigest("#{encode_content}-#{user_id}-#{my_id}")
-    key = Digest::SHA256.base64digest("#{code}-#{AUTHOR}@#{SCHOOL}by#{EMAIL}use#{KEY}")
+    code = Digest::SHA2.hexdigest("#{encode_content}-#{user_id}-#{my_id}use#{KEY}")
+    key = Digest::SHA256.base64digest("#{code}-#{AUTHOR}@#{SCHOOL}by#{EMAIL}")
 
     num = "#{user_id}"[-1].ord
     left = num % 16
