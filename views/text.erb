@@ -1,1 +1,7 @@
-text.html.erb
+<xml>
+<ToUserName><%= @params['FromUserName'] %></ToUserName>
+<FromUserName><%= @params['ToUserName'] %></FromUserName>
+<CreateTime><%= Time.now.to_i %></CreateTime>
+<MsgType><%= @params['MsgType']%></MsgType>
+<Content><%= @params['Content']%></Content>
+</xml>
