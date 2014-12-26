@@ -5,7 +5,7 @@ require './helper'
   before do
     timestamp, nonce = params[:timestamp].to_s, params[:nonce].to_s
     codes = ["jwcbit", timestamp, nonce].sort.join("")
-    halt!('401 Unauthorized', 401) unless Digest::SHA1.hexdigest(codes) == params[:signature]
+    halt(401, '401 Unauthorized') unless Digest::SHA1.hexdigest(codes) == params[:signature]
     status(200)
   end
 
