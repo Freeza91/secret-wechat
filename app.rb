@@ -31,5 +31,10 @@ require './helper'
                                   "#{@params['Content']}")
       #返回加密结果
       erb :text
+    when "event"
+      if @params['Event'] == "subscribe"
+        @params['Content'] = subscribe
+        erb :subscribe
+      end
     end
   end
