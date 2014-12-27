@@ -2,10 +2,12 @@ require 'sinatra'
 require 'active_support/core_ext/hash'
 require './helper'
 
+  TOKEN = "my_token"
+
   #对微信发来的所有消息进行验证
   before do
     timestamp, nonce = params[:timestamp].to_s, params[:nonce].to_s
-    codes = ["jwcbit", timestamp, nonce].sort.join("")
+    codes = ["#{TOKEN}", timestamp, nonce].sort.join("")
     halt(401, '401 Unauthorized') unless Digest::SHA1.hexdigest(codes) == params[:signature]
     status(200)
   end
