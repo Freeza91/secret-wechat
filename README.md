@@ -2,11 +2,10 @@
 
 ![title](https://raw.githubusercontent.com/rudyboy/secret-wechat/master/images/title.jpeg "头像")
 
-![code](https://raw.githubusercontent.com/rudyboy/secret-wechat/master/images/code.jpg "二维码")
+<img src="https://raw.githubusercontent.com/rudyboy/secret-wechat/master/images/code.jpg" height="200" width="200" >
 
-![code](https://raw.githubusercontent.com/rudyboy/secret-wechat/master/images/test1.jpg "测试用例")
+<img src="https://raw.githubusercontent.com/rudyboy/secret-wechat/master/images/test1.jpg" height="300" width="200" >
 
-![code](https://raw.githubusercontent.com/rudyboy/secret-wechat/master/images/test2.jpg "测试用例")
+<img src="https://raw.githubusercontent.com/rudyboy/secret-wechat/master/images/test2.jpg" height="300" width="200" >
 
-![code](https://raw.githubusercontent.com/rudyboy/secret-wechat/master/images/test3.jpg "测试用例")
-
+<img src="https://raw.githubusercontent.com/rudyboy/secret-wechat/master/images/test3.jpg" height="300" width="200" >
