@@ -4,7 +4,7 @@ require "base64"
 AUTHOR = "rudyboy"
 EMAIL = "useyes91@gmail.com"
 SCHOOL = "BIT"
-KEY = "my_private_key"
+KEY = "I love women"
 
 helpers do
 
