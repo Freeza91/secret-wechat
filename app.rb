@@ -2,7 +2,7 @@ require 'sinatra'
 require 'active_support/core_ext/hash'
 require './helper'
 
-  TOKEN = "my_token"
+  TOKEN = "secretbyrudy"
 
   #对微信发来的所有消息进行验证
   before do
